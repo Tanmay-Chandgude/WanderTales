@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELP | WANDER TALES</title>
+    <link rel="stylesheet" href="css/help.css">
+    <!-- favicon -->
+    <link rel="icon" href="img/letter-wt-logo-260nw-471230561.jpg" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+
+
+    <div class="container"></div>
+        <h1>Help & Support</h1> <!-- Title added -->
+    </div>
+    <ul class="accordiaan">
+        <li>
+            <input type="radio" name="accordiaan" id="first" >
+            <label for="first">How can I contact customer support if I have an issue ?</label>
+            <div class="content">
+                <p>If you encounter any issues feel free to reach us at <b>wandertales@gmail.com</b>.
+                   Our experienced team is always ready to assist you!</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordiaan" id="second">
+            <label for="second">What should I do if I need to cancel or modify my booking?</label>
+            <div class="content">
+                <p>If you need to cancel or modify your booking, please contact our customer service team as soon as possible. Depending on the terms of your booking, we may be able to assist you with changes or provide a refund. 
+                   Please have your booking reference number ready for faster assistance.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordiaan" id="third">
+            <label for="third">How can I find the best travel packages for my needs?</label>
+            <div class="content">
+                <p>To find the best travel packages, you can browse our website’s package section or use our search filters to tailor results based on your preferences (e.g., destination, budget, travel dates).
+                   You can also contact our travel experts for personalized recommendations based on your interests and budget
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordiaan" id="fourth">
+            <label for="fourth">What measures are in place to ensure my safety during travel?</label>
+            <div class="content">
+                <p>Your safety is our priority. 
+                   We partner with trusted service providers who follow strict health and safety protocols.
+                   Additionally, we keep our customers informed about any travel advisories or safety measures in place at their destination. 
+                   If you have specific concerns, please reach out to us for more detailed information.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordiaan" id="fifth">
+            <label for="fifth"> What should I do if I have special requests or requirements (e.g., dietary restrictions, accessibility needs)?</label>
+            <div class="content">
+                <p>If you have special requests or requirements, please inform us at the time of booking. 
+                   We will do our best to accommodate your needs, whether it’s related to dietary restrictions, accessibility, or other preferences. 
+                   It’s important to communicate these requests early to ensure they can be arranged properly.
+                </p>
+            </div>
+        </li>
+    </ul>
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+</html>
