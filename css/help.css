@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e3edf7;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.accordiaan{
+    margin: 30px auto;
+    width: 1000px;
+}
+
+.accordiaan li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #0C0C0C;
+}
+
+.accordiaan li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff; /* Title color */
+
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordiaan .content{
+    color: #fff;
+    padding: 0 10px;
+    line-height: 26px; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+input[type="radio"]:checked + label::before{
+    content: '-';
+}
+
+h1 {
+    font-size: 50px; /* Title font size */
+    color: #181C14; /* Title color */
+    margin: 20px 0; /* Spacing around title */
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins', sans-serif;
+    font-weight: bolder;
+}
